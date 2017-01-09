@@ -1,6 +1,8 @@
 FROM lsiobase/alpine.python
 MAINTAINER sparklyballs
 
+RUN apk add --no-cache sshpass
+
 # add local files
 COPY root/ /
 
