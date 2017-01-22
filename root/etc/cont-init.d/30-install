@@ -12,5 +12,3 @@
 # permissions
 chown -R abc:abc \
 	/opt/plexpy
-
-apk add --no-cache openssh-client sshpass
