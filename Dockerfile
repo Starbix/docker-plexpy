@@ -1,6 +1,8 @@
 FROM lsiobase/alpine.python:3.5
 MAINTAINER sparklyballs
 
+ENV ADVANCED_GIT_BRANCH="master"
+
 # add local files
 COPY root/ /
 
