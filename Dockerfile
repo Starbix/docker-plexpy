@@ -8,6 +8,7 @@ RUN \
 	gcc \
 	make \
 	python-dev && \
+apk add --no-cache openssh-client sshpass \
 
 # install pycryptodomex
  pip install --no-cache-dir -U \
@@ -21,8 +22,6 @@ RUN \
 
 # add local files
 COPY root/ /
-
-RUN apk add --no-cache openssh-client sshpass
 
 # ports and volumes
 VOLUME /config /logs
