@@ -11,7 +11,7 @@ RUN \
 apk add --no-cache openssh-client sshpass \
 
 # install pycryptodomex
- pip install --no-cache-dir -U \
+ && pip install --no-cache-dir -U \
 	pycryptodomex && \
 
 # cleanup
